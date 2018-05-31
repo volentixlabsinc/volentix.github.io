@@ -25,13 +25,17 @@ This repository will house the artifacts for our public website.
 
 This project houses the html, css, and javascript files for the website.
 
-This project uses the static website generator [Jekyll](https://jekyllrb.com/).
+This project uses:
 
-Additionally, we used the linear theme from [these guys](http://themes.jekyllrc.org/linear/).
-
-Also, we are using [this for i18n](https://github.com/untra/polyglot)
+  * the static website generator [Jekyll](https://jekyllrb.com/).
+  * [Bootstrap](https://getbootstrap.com/) for the llok and feel.
+  * For i18n we are using [Jekyll Polyglot](https://github.com/untra/polyglot)
 
 ## Usage
+
+```
+Note that the master branch is used to house the generated artifacts. Although Github does support Jekyll, it does not support jekyll-polyglot at this time. As a result, the jekyll project will be housed in the development branch.
+```
 
 In order to develop this project locally, you will need to make sure you have the following:
   * ruby version 2.1 or greater
@@ -39,25 +43,38 @@ In order to develop this project locally, you will need to make sure you have th
 
 Once ruby and gem have been installed and configured, you will need to install Jekyll:
 
+Switch to the develop branch:
+
+```
+git checkout development
+```
+
+Install Bundler and Jekyll.
+
 ```
 gem install jekyll bundler
 ```
 
-Navigate to the directory you downloaded this code.
-
+Run (one time):
 ```
 bundle install
 ```
 
+To build:
 ```
 jekyll build
 ```
 
+To serve:
 ```
 jekyll serve
 ```
 
 Open a web browser to: http://localhost:4000
+
+```
+Additionally, you will need to, when changing the i18n artifacts, to stop Jekyll, build, and serve again to see your changes.
+```
 
 Happy coding!
 
