@@ -1,0 +1,15 @@
+title: Welcome to Volentix
+description: Envisioned to be a community powered decentralized autonomous organization (DAO)
+pillars: The Pillars Of Volentix
+email: Email
+button_text: Sign Up
+venue_desc: With Venue, a bounty distribution platform, Volentix development network members will post bounties and campaigns to Venue for work needed—for example, fixing bugs, creating content, or promoting Volentix—and anyone may claim a bounty in exchange for their efforts. Venue provides real time metrics on VTX rewards earned by participants and incentivizes the adoption of VTX.
+vdex_desc: VDex will be an extensible, customizable, decentralized cryptocurrency exchange platform which does not possess users’ information or assets. VDex will use several protocols to facilitate cross-blockchain exchange. Users of the VDex will always maintain custody of their funds in their own virtual wallets.
+vespucci_desc: Vespucci will be an Automated Analytical Engine which researches all available information and indicators related to tradeable digital assets and provides a risk assessment score based on a sophisticated matrix of data. These metrics are visualized as widgets that can be embedded in any site which desires transparent analysis of cryptocurrencies.
+verto_desc: Verto will be a next-generation, multi-currency wallet which integrates features from other Volentix pillars. Features functions for trading, staking, signature verification, and secure storage. Private keys are maintained in this wallet and are accessible only by its owner.
+contact_us: Contact
+vtx_desc: VTX is the native currency of the Volentix DAO. It is a cryptographic deflationary token that provides access to staking and membership.
+vtx_desc2: VTX may be staked to
+vtx_desc2_li1: Submit proposals to the DAO
+vtx_desc2_li2: Vote on proposals submitted to the Network
+vtx_desc2_li3: Participate in the governance of the DAO

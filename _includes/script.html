@@ -1,0 +1,62 @@
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="assets/js/volentix.min.js"></script>
+
+    
+    <script>
+            
+          $(function(){
+            $(".typed").typed({
+                strings: ["{{home.description}}"],
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                typeSpeed: 10,
+                startDelay: 100,
+                backSpeed: 20,
+                backDelay: 500,
+                loop: false,
+                loopCount: 1,
+                showCursor: false,
+                cursorChar: "|",
+                attr: null,
+                contentType: 'html',
+                callback: function() {},
+                preStringTyped: function() {},
+                onStringTyped: function() {},
+                resetCallback: function() {}
+            });
+        }); 
+    </script>   
+    <script>
+        var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+           // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            //    + minutes + "m " + seconds + "s ";
+            
+            if (distance < 0) {
+                clearInterval(x); 
+                //document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+      </script>
+
+     <!-- Begin Constant Contact Active Forms -->
+    <script> var _ctct_m = "ca28960c2eb04b13082a877f231528de"; </script>
+    <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+    <!-- End Constant Contact Active Forms -->
+      

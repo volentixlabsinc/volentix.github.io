@@ -1,0 +1,22 @@
+---
+title: Realrhys.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: example@example.org
+url: http://example.org
+baseurl: "/"
+data_dir: "./_data"
+plugins:
+- jekyll-polyglot
+languages:
+- en
+- tr
+parallel_localization: true
+language_data: data.lang.%%
+language_includes_dir: _i18n

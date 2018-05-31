@@ -1,0 +1,30 @@
+{% assign home = site.data.lang[site.active_lang].home %}
+<section id="contact" class="text-white text-center" style="background-color: #232C3B;" >
+  <div class="row">
+    <div class="col-lg-5 col-md-5 text-center" >
+      <ul class="contact">
+        <li><a href="https://github.com/Volentix" ><i class="fa fa-github" style="color: grey; font-size:35px;"></i></a></li>
+        <li><a href="https://t.me/volentix"><i class="fa fa-telegram" style="color: grey; font-size: 35px;"></i></a></li>
+        <li><a href="https://twitter.com/Volentix"><i class="fa fa-twitter" style="color: grey; font-size: 35px;"></i></a></li>
+        <li><a href="https://medium.com/@marketing_33515"><i class="fa fa-medium" style="color: grey; font-size: 35px;"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center" >
+      <img src="assets/img/volentix_logo.png" height="85px;" alt=""/>
+    </div>
+    <div class="col-lg-5 col-md-5 text-center" >
+        
+      <ul class="contact" >
+        <li>
+          <h6 style="color: grey; font-size: 15px;">
+            <a href="mailto:info@volentixlabs.com" style="color: grey;">info@volentix</a><span> | </span>
+            
+            <a href="{% if site.active_lang == site.default_lang %} /privacy.html {% else %} /{{ site.active_lang }}/privacy.html {% endif %}" style="color: grey;">Privacy Policy</a><span> | </span>
+            <a href="{% if site.active_lang == site.default_lang %} /terms.html {% else %} /{{ site.active_lang }}/terms.html {% endif %}" style="color: grey;">Terms &amp; Conditions</a>
+          </h6>
+        </li>
+      </ul>
+      <h6 style="color: grey; font-size: 10px;" class="text-right">Copyright &copy; 2018 Volentix Labs Inc. | All rights reserved.</h6>
+    </div>
+  </div>
+</section> 

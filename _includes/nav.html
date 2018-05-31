@@ -1,0 +1,61 @@
+
+	<!-- Nav 
+<div id="nav-wrapper">
+	{% assign data = site.data.lang[site.active_lang] %}
+
+	<nav id="nav">
+		<ul>
+			{% assign current = page.url | downcase | split: '/' %}
+			<li {% if current[1] == 'index.html' %}class='current'{% endif %}>
+				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.home.url}} {% else %} /{{ site.active_lang }}{{data.nav.home.url}} {% endif %}">{{data.nav.home.name}}</a>
+			</li>
+			<li {% if current[1] == 'blog' %}class='current'{% endif %}>
+				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.announcements.url}} {% else %} /{{ site.active_lang }}{{data.nav.announcements.url}} {% endif %}">{{data.nav.announcements.name}}</a></li>
+			<li {% if current[1] == 'legal/privacy-policy.html' %}class='current'{% endif %}>
+				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.privacy_policy.url}} {% else %} /{{ site.active_lang }}{{data.nav.privacy_policy.url}} {% endif %}">{{data.nav.privacy_policy.name}}</a>
+			</li>
+			<li {% if current[1] == 'legal/contact.html' %}class='current'{% endif %}>
+				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.contact.url}} {% else %} /{{ site.active_lang }}{{data.nav.contact.url}} {% endif %}">{{data.nav.contact.name}}</a>
+			</li>	
+		</ul>
+	</nav>
+</div>
+
+-->
+{% assign data = site.data.lang[site.active_lang] %}
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Volentix</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">{{data.nav.about.name}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#pillars">{{data.nav.pillars.name}}</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#vtx">VTX</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">{{data.nav.contact.name}}</a>
+          </li>
+          <li class="nav-item" style="padding: 5px;">
+            {% if site.active_lang == site.default_lang %}
+            <a href="/tr/index.html">
+              <img src="assets/img/turkey.png" alt="Turkish" height="16px" style="border-radius: 15%;"/>
+            </a>
+            {% else %}
+            <a href="/index.html">
+              <img src="assets/img/uk.svg" alt="USA" height="14px" style="border-radius: 15%;"/>
+            </a>
+            {% endif %}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
