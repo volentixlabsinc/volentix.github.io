@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Raleway','Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Raleway','Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
@@ -15,22 +15,27 @@ hr {
 
 #hrvdex {
   border-color: green;
+  size: 1;
 }
 
 #hrverto {
   border-color: aqua;
+  size: 1;
 }
 
 #hrvespucci {
   border-color: yellow;
+  size: 1;
 }
 
 #hrvenue {
   border-color: purple;
+  size: 1;
 }
 
 #hrvtx {
   border-color: pink;
+  size: 1;
   width: 75%;
 }
 
@@ -57,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .headerimage {
@@ -133,7 +138,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -143,7 +148,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #a64d79;
-  font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -301,7 +306,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -340,7 +345,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-xl {
