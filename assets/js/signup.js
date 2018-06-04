@@ -1,5 +1,6 @@
 $(function() {
     //Cookies.remove('signedup');
+    //Cookies.remove('shown_thanks');
     if (Cookies.get('signedup') === undefined ) {
         $(".thanks-for-signing-up").hide();
         var callback = function(mutationsList) {
@@ -33,8 +34,6 @@ $(function() {
     } else {
         // user has already signed up for the newsletter
         $(".ctct-inline-form").hide();
-        Cookies.remove('shown_thanks');
-        //  $( ".thanks-for-signing-up" ).append( "<h1 class='text-grey'>You are signed up</h1>" );
         if (Cookies.get('shown_thanks') === undefined ) {
             Cookies.set('shown_thanks', 'yes');
             $('#myModal').modal({show:true});
