@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
       <head>
         
@@ -255,9 +255,11 @@ Open Source Software</p>
     <script src="assets/vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="assets/js/volentix.min.js"></script>
+    <script src="assets/js/signup.js"></script>
 
     
     <script>
@@ -282,7 +284,9 @@ Open Source Software</p>
                 onStringTyped: function() {},
                 resetCallback: function() {}
             });
-        }); 
+            Cookies.set('lang', 'tr')
+        });
+
     </script>   
     <script>
         var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
@@ -308,6 +312,6 @@ Open Source Software</p>
     <script> var _ctct_m = "ca28960c2eb04b13082a877f231528de"; </script>
     <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
     <!-- End Constant Contact Active Forms -->
-      
+
 
 </html>
