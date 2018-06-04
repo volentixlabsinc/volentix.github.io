@@ -1,0 +1,23 @@
+---
+permalink: "/thanks.html"
+languages:
+- en
+- tr
+navigation: false
+---
+
+<!DOCTYPE html>
+<html lang="{{site.active_lang}}">
+
+  <body id="page-top">
+
+   </body>
+   <script>
+       {% if site.active_lang == site.default_lang %}
+       window.location.replace('/index.html')
+       {% else %}
+       window.location.replace('/tr/index.html')
+       {% endif %}
+   </script>
+
+</html>

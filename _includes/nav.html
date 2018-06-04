@@ -1,27 +1,3 @@
-
-	<!-- Nav 
-<div id="nav-wrapper">
-	{% assign data = site.data.lang[site.active_lang] %}
-
-	<nav id="nav">
-		<ul>
-			{% assign current = page.url | downcase | split: '/' %}
-			<li {% if current[1] == 'index.html' %}class='current'{% endif %}>
-				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.home.url}} {% else %} /{{ site.active_lang }}{{data.nav.home.url}} {% endif %}">{{data.nav.home.name}}</a>
-			</li>
-			<li {% if current[1] == 'blog' %}class='current'{% endif %}>
-				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.announcements.url}} {% else %} /{{ site.active_lang }}{{data.nav.announcements.url}} {% endif %}">{{data.nav.announcements.name}}</a></li>
-			<li {% if current[1] == 'legal/privacy-policy.html' %}class='current'{% endif %}>
-				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.privacy_policy.url}} {% else %} /{{ site.active_lang }}{{data.nav.privacy_policy.url}} {% endif %}">{{data.nav.privacy_policy.name}}</a>
-			</li>
-			<li {% if current[1] == 'legal/contact.html' %}class='current'{% endif %}>
-				<a href="{% if site.active_lang == site.default_lang %} {{data.nav.contact.url}} {% else %} /{{ site.active_lang }}{{data.nav.contact.url}} {% endif %}">{{data.nav.contact.name}}</a>
-			</li>	
-		</ul>
-	</nav>
-</div>
-
--->
 {% assign data = site.data.lang[site.active_lang] %}
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -44,16 +20,17 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">{{data.nav.contact.name}}</a>
           </li>
+          <!--
           <li style="padding: 8px;"><a href="https://t.me/volentix"><i class="fa fa-telegram" style="color: #f4f4f5; font-size: 19px;"></i></a>&nbsp;</li>
-          <li style="padding: 5px;"><a href="https://bitcointalk.org"><img src="assets/img/bitcoin-icon.svg" height="20px;"></a>
-            </a>&nbsp;</li>
+          <li style="padding: 5px;"><a href="https://bitcointalk.org"><img src="assets/img/bitcoin-icon.svg" height="20px;"></a>&nbsp;</li>
+          -->
           <li class="nav-item" style="padding: 5px;">
             {% if site.active_lang == site.default_lang %}
-            <a href="/tr/index.html">
+            <a id="switch_to_turkish" href="/tr/index.html">
               <img src="assets/img/turkey.png" alt="Turkish" height="16px" style="border-radius: 15%;"/>
             </a>
             {% else %}
-            <a href="/index.html">
+            <a id="switch_to_english" href="/index.html">
               <img src="assets/img/uk.svg" alt="USA" height="14px" style="border-radius: 15%;"/>
             </a>
             {% endif %}

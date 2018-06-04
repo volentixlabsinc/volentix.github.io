@@ -6,9 +6,11 @@
     <script src="assets/vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="assets/js/volentix.min.js"></script>
+    <script src="assets/js/signup.js"></script>
 
     
     <script>
@@ -33,7 +35,9 @@
                 onStringTyped: function() {},
                 resetCallback: function() {}
             });
-        }); 
+            Cookies.set('lang', '{{ site.active_lang }}')
+        });
+
     </script>   
     <script>
         var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
@@ -59,25 +63,3 @@
     <script> var _ctct_m = "ca28960c2eb04b13082a877f231528de"; </script>
     <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
     <!-- End Constant Contact Active Forms -->
-    <script>
-
-        $(function() {
-            var callback = function(mutationsList) {
-                for(var mutation of mutationsList) {
-                    if (mutation.type == 'childList') {
-                        var successmessageCallback = function(mutationsList){
-                            if (mutation.type == 'attributes') {
-                                console.log('The The success callback  attribute was modified.');
-                                window.location.href = "/terms.html";
-                            }
-                        };
-                        var observer_success_message = new MutationObserver(successmessageCallback);
-                        observer_success_message.observe($( "#success_message_0" )[0], { attributes: true, childList: true });
-                        observer.disconnect();
-                    }
-                }
-            };
-            var observer = new MutationObserver(callback);
-            observer.observe($( ".ctct-inline-form" )[0], { attributes: true, childList: true });
-        });
-    </script>
