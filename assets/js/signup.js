@@ -1,6 +1,16 @@
+function gtag_report_conversion(url) { 
+    var callback = function () {
+        if (typeof(url) != 'undefined') { 
+           window.location = url; 
+        } 
+    }; 
+    gtag('event', 'conversion', { 'send_to': 'AW-803738712/t_-wCJHMvoMBENiooP8C', 'event_callback': callback }); 
+    return false; 
+}
+
 $(function() {
-    //Cookies.remove('signedup');
-    //Cookies.remove('shown_thanks');
+    Cookies.remove('signedup');
+    Cookies.remove('shown_thanks');
     if (Cookies.get('signedup') === undefined ) {
         $(".thanks-for-signing-up").hide();
         var callback = function(mutationsList) {
@@ -12,14 +22,13 @@ $(function() {
                             console.log('The The success callback  attribute was modified.');
                             Cookies.set('signedup', 'yes');
                             if (Cookies.get('lang') == 'tr') {
-                                window.location.href = "/tr/thanks.html";
+                                gtag_report_conversion("www.volentix.io/tr");
                             } else {
-                                window.location.href = "/thanks.html";
+                                gtag_report_conversion("www.volentix.io");
                             }
                         }
                     };
                     var observer_success_message = new MutationObserver(successmessageCallback);
-
                     if (Cookies.get('lang') === 'tr') {
                         observer_success_message.observe($( "#success_message_1" )[0], { attributes: true, childList: true });
                     } else {
@@ -29,6 +38,7 @@ $(function() {
                 }
             }
         };
+
         var observer = new MutationObserver(callback);
         observer.observe($( ".ctct-inline-form" )[0], { attributes: true, childList: true });
     } else {
