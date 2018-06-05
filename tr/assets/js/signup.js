@@ -9,8 +9,7 @@ function gtag_report_conversion(url) {
 }
 
 $(function() {
-    Cookies.remove('signedup');
-    Cookies.remove('shown_thanks');
+    //Cookies.remove('signedup');
     if (Cookies.get('signedup') === undefined ) {
         $(".thanks-for-signing-up").hide();
         var callback = function(mutationsList) {
@@ -19,12 +18,12 @@ $(function() {
                     console.log("Addomg the ;ostemer");
                     var successmessageCallback = function(mutationsList){
                         if (mutation.type == 'attributes') {
-                            console.log('The The success callback  attribute was modified.');
+                            $(".ctct-inline-form").hide();
                             Cookies.set('signedup', 'yes');
                             if (Cookies.get('lang') == 'tr') {
-                                gtag_report_conversion("www.volentix.io/tr");
+                                gtag_report_conversion("/tr/thanks.html");
                             } else {
-                                gtag_report_conversion("www.volentix.io");
+                                gtag_report_conversion("/thanks.html");
                             }
                         }
                     };
@@ -42,15 +41,7 @@ $(function() {
         var observer = new MutationObserver(callback);
         observer.observe($( ".ctct-inline-form" )[0], { attributes: true, childList: true });
     } else {
-        // user has already signed up for the newsletter
         $(".ctct-inline-form").hide();
-        if (Cookies.get('shown_thanks') === undefined ) {
-            Cookies.set('shown_thanks', 'yes');
-            $('#myModal').modal({show:true});
-            setTimeout(function(){
-                $("#myModal").modal('toggle');
-            }, 3000);
-        }
     }
 });
 
