@@ -70,6 +70,11 @@ h6 {
   padding: 20px;
 }
 
+.thanksimage {
+  width: 20%;
+  padding: 20px;
+}
+
 .bg-primary {
   background-color: #f2f2f2 !important;
 }
@@ -268,6 +273,103 @@ header.masthead p {
     font-size: 4rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header.thanks {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header_darker.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.thanks hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header.thanks h1 {
+  font-size: 2rem;
+}
+
+header.thanks p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header.thanks p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.thanks {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.thanks h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .service-box {
   max-width: 400px;
