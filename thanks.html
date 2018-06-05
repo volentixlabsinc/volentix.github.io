@@ -6,23 +6,32 @@ languages:
 - tr
 navigation: false
 ---
+
 {% assign thanks = site.data.lang[site.active_lang].thanks %}
 
-<section id="thanks">
-        <div class="container">
-          
-          <div class="row">
-            <div class="col-lg-12 col-md-12 text-center" >
-                <a href="#" data-toggle="tooltip" title="Artist: https://www.flickr.com/photos/wwworks/ Image: https://www.flickr.com/photos/73645804@N00/4759535950 License: https://creativecommons.org/licenses/by/2.0/">
-                    <img src="assets/img/thanks.png" alt="" class="border border-info"/>
-                </a>
-                <br/>
-                <br/>
-                <p class="text-muted mb-0">{{thanks.unsubscribe}}</p>
-            </div>
-          </div>
-          
-      </section>
+<header class="thanks text-center text-white d-flex">
+	<div class="container my-auto">
+		<div class="row">
+			<div class="col-lg-10 mx-auto">
+				<div id="logo">
+					<a href="#"><img src="assets/img/volentixLogo.png" alt="" class="thanksimage"></a>
+				</div>
+			</div>
+			
+			<div class="col-lg-8 mx-auto">
+					<br/>
+
+					<br/>
+		
+					<br/>
+		
+		
+					&nbsp;<p>{{thanks.unsubscribe}}</p>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Header -->
 
      
         
