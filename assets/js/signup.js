@@ -22,9 +22,9 @@ $(function() {
                             console.log('The The success callback  attribute was modified.');
                             Cookies.set('signedup', 'yes');
                             if (Cookies.get('lang') == 'tr') {
-                                gtag_report_conversion("www.volentix.io/tr");
+                                gtag_report_conversion("/tr/thanks.html");
                             } else {
-                                gtag_report_conversion("www.volentix.io");
+                                gtag_report_conversion("/thanks.html");
                             }
                         }
                     };
@@ -46,9 +46,9 @@ $(function() {
         $(".ctct-inline-form").hide();
         if (Cookies.get('shown_thanks') === undefined ) {
             Cookies.set('shown_thanks', 'yes');
-            $('#myModal').modal({show:true});
+            //$('#myModal').modal({show:true});
             setTimeout(function(){
-                $("#myModal").modal('toggle');
+                //$("#myModal").modal('toggle');
             }, 3000);
         }
     }

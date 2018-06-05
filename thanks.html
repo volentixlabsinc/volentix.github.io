@@ -1,46 +1,28 @@
 ---
 permalink: "/thanks.html"
+layout: thanks
 languages:
 - en
 - tr
 navigation: false
 ---
+{% assign thanks = site.data.lang[site.active_lang].thanks %}
 
-<!DOCTYPE html>
-<html lang="{{site.active_lang}}">
-    <head>
-        <!-- Global site tag (gtag.js) - Google AdWords: 803738712 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-803738712"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-803738712'); </script> 
-        <!-- 
-https://www.en.advertisercommunity.com/t5/AdWords-Tracking-and-Reporting/conversion-tracking-with-no-thank-you-page/td-p/18067
-        -->
+<section id="thanks">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-center" >
+                <a href="#" data-toggle="tooltip" title="Artist: https://www.flickr.com/photos/wwworks/ Image: https://www.flickr.com/photos/73645804@N00/4759535950 License: https://creativecommons.org/licenses/by/2.0/">
+                    <img src="assets/img/thanks.png" alt="" class="border border-info"/>
+                </a>
+                <br/>
+                <br/>
+                <p class="text-muted mb-0">{{thanks.unsubscribe}}</p>
+            </div>
+          </div>
+          
+      </section>
 
-
-        <!-- Global site tag (gtag.js) - Google AdWords: 803738712 
-        <script src="https://www.googletagmanager.com/gtag/js?id=AW-803738712"></script> 
-        <script> 
-            window.dataLayer = window.dataLayer || []; 
-            function gtag(){
-                dataLayer.push(arguments);
-            } 
-            gtag('js', new Date()); gtag('config', 'AW-803738712'); 
-        </script>
-        --> 
-        <!-- Event snippet for Volentix Registration conversion page 
-        <script> 
-            gtag('event', 'conversion', {'send_to': 'AW-803738712/T2G1CLmZ9IIBENiooP8C'});
-        </script>
---> 
-    </head>
-
-  <body id="page-top">
-
-   </body>
-   <script>
-       {% if site.active_lang == site.default_lang %}
-       window.location.replace('/index.html')
-       {% else %}
-       window.location.replace('/tr/index.html')
-       {% endif %}
-   </script>
-
-</html>
+     
+        
