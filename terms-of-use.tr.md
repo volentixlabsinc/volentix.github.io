@@ -1,6 +1,6 @@
 ---
 layout: privacy
-title: KULLANIM KOŞULLARI
+title: Kullanım Koşulları 
 permalink: /terms.html
 lang: tr
 ---

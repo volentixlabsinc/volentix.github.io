@@ -1,6 +1,6 @@
 ---
 layout: privacy
-title: Gizlilik Politikasa
+title: Gizlilik Politikasi
 permalink: /privacy.html
 lang: tr
 ---
