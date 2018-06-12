@@ -1,4 +1,4 @@
-{% assign home = site.data.lang[site.active_lang].home %}
+{% assign footer = site.data.lang[site.active_lang].footer %}
 <section id="contact" class="text-white text-center" style="background-color: #232C3B;" >
   <div class="row">
     <div class="col-lg-5 col-md-5 text-center" >
@@ -19,8 +19,8 @@
           <h6 style="color: grey; font-size: 15px;">
             <a href="mailto:info@volentixlabs.com" style="color: grey;">info@volentix</a><span> | </span>
             
-            <a href="{% if site.active_lang == site.default_lang %} /privacy.html {% else %} /{{ site.active_lang }}/privacy.html {% endif %}" style="color: grey;">Privacy Policy</a><span> | </span>
-            <a href="{% if site.active_lang == site.default_lang %} /terms.html {% else %} /{{ site.active_lang }}/terms.html {% endif %}" style="color: grey;">Terms &amp; Conditions</a>
+            <a href="{% if site.active_lang == site.default_lang %} /privacy.html {% else %} /{{ site.active_lang }}/privacy.html {% endif %}" style="color: grey;">{{footer.privacy}}</a><span> | </span>
+            <a href="{% if site.active_lang == site.default_lang %} /terms.html {% else %} /{{ site.active_lang }}/terms.html {% endif %}" style="color: grey;">{{footer.terms}}</a>
           </h6>
         </li>
       </ul>
