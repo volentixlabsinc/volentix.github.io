@@ -1,13 +1,3 @@
-function gtag_report_conversion(url) { 
-    var callback = function () {
-        if (typeof(url) != 'undefined') { 
-           window.location = url; 
-        } 
-    }; 
-    gtag('event', 'conversion', { 'send_to': 'AW-803738712/t_-wCJHMvoMBENiooP8C', 'event_callback': callback }); 
-    return false; 
-}
-
 $(function() {
     //Cookies.remove('signedup');
     if (Cookies.get('signedup') === undefined ) {
@@ -15,15 +5,14 @@ $(function() {
         var callback = function(mutationsList) {
             for(var mutation of mutationsList) {
                 if (mutation.type == 'childList') {
-                    console.log("Addomg the ;ostemer");
                     var successmessageCallback = function(mutationsList){
                         if (mutation.type == 'attributes') {
                             $(".ctct-inline-form").hide();
                             Cookies.set('signedup', 'yes');
                             if (Cookies.get('lang') == 'tr') {
-                                gtag_report_conversion("/tr/thanks.html");
+                                window.location = "/tr/thanks.html";
                             } else {
-                                gtag_report_conversion("/thanks.html");
+                                window.location = "/thanks.html";
                             }
                         }
                     };
