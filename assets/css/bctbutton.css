@@ -1,0 +1,10 @@
+.btn-bct,
+.btn-bct:hover,
+.btn-bct:active,
+.btn-bct:visited,
+.btn-bct:focus {
+    background-color: DarkSlateGrey  !important;
+    border-radius: 24px !important;
+    border: 3px solid #383838 !important;
+    color: #f4f4f4;
+}
