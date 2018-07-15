@@ -13,6 +13,16 @@ hr {
   
 }
 
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited,
+.btn-success:focus {
+    background-color: DarkSlateGrey  !important;
+    border-radius: 24px !important;
+    border: 3px solid #383838 !important;
+}
+
 #hrvdex {
   border-color: green;
   size: 1;
