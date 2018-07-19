@@ -6,6 +6,7 @@ languages:
 ---
 
 {% include nav.html %}
+{% assign data = site.data.lang[site.active_lang].signaturecampaign %}
 <header class="masthead text-center text-white d-flex">
 	<div class="container my-auto darken-overlay">
 		<div class="row">
@@ -21,8 +22,8 @@ languages:
 				<br/>
 				<br/>
 				<a href="https://bitcointalk.org/index.php?topic=4557725.0" class="btn btn-bct">
-					<h2>Join the Venue</h2>
-					<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signature Campaign!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+					<h2>{{data.part_one}}</h2>
+					<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{data.part_two}}!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
 				</a>
 				<!-- &nbsp;<span class="typed" ></span> -->
 			</div>
