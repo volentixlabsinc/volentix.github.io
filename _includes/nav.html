@@ -23,7 +23,11 @@
             <a class="nav-link js-scroll-trigger" href="#contact">{{data.nav.contact.name}}</a>
           </li>
           <li class="nav-item">
+            {% if site.active_lang == site.default_lang %}
             <a class="nav-link js-scroll-trigger" target="_blank" href="https://s3.ca-central-1.amazonaws.com/volentix/VDexWhitePaper-v0.1.0.pdf">VDEX Whitepaper</a>
+            {% else %}
+            <a class="nav-link js-scroll-trigger" target="_blank" href="https://s3.ca-central-1.amazonaws.com/volentix/VDexWhitePaper-v0.1.0+Turkish+PDF.pdf">VDEX Whitepaper</a>
+            {% endif %}
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" target="_blank" href="https://venue.volentix.io">Join Venue</a>
